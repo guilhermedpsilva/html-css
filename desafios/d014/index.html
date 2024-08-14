@@ -1,5 +1,6 @@
-|<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,8 @@
             height: 70px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid black;
             text-align: center;
             padding: 10px;
@@ -35,15 +37,24 @@
             background-color: darkgray;
             color: white;
         }
+
+        .destaque {
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
     <table>
         <thead>
-            <th scope="col">Área</th>
-            <th scope="col">Disciplinas</th>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
             <th colspan="2" scope="colgroup">Notas</th>
-            <th scope="col">Média</th>
+            <th rowspan="2" scope="col">Média</th>
+            <tr class="destaque">
+                <td>Notas 1</td>
+                <td>Notas 2</td>
+            </tr>   
         </thead>
         <tbody>
             <tr>
@@ -95,4 +106,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
